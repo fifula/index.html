@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Piatto</title>
+
+<link rel="stylesheet" href="stylki.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+PIATTO 🍕
+
+</div>
+
+<nav>
+
+<ul>
+
+<li>
+<a href="#" onclick="pokaz('glowna')">
+Strona główna
+</a>
+</li>
+
+<li>
+<a href="#" onclick="pokaz('menu')">
+Menu
+</a>
+</li>
+
+<li>
+<a href="#" onclick="pokaz('kontakt')">
+Kontakt
+</a>
+</li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<div id="glowna" class="strona aktywna">
+
+<div class="hero">
+
+<h1>Witamy w Piatto</h1>
+
+<p>Najlepsza pizza w mieście 🍕</p>
+
+</div>
+
+<h2>O nas</h2>
+
+<p>
+
+jest git nie jak z zabki 
+polecam 
+
+</p>
+
+</div>
+
+<div id="menu" class="strona">
+
+<h1>Nasze menu</h1>
+
+<div class="pizza">
+
+<h2>Pizza 1</h2>
+
+<p>Sos pomidorowy, ser, szynka.</p>
+
+</div>
+
+<div class="pizza">
+
+<h2>Pizza 2</h2>
+
+<p>Sos pomidorowy, ser, pieczarki.</p>
+
+</div>
+
+<div class="pizza">
+
+<h2>Pizza 3</h2>
+
+<p>Sos pomidorowy, ser, salami.</p>
+
+</div>
+
+</div>
+
+<div id="kontakt" class="strona">
+
+<h1>Kontakt do nas</h1>
+
+<p>📞 Telefon: 666 666 666</p>
+
+<p>📧 kontakt costam.@gmail.com</p>
+
+<p>📍  spytkowice ul.</p>
+
+</div>
+
+<footer>
+
+2026 PIATTO
+
+</footer>
+
+<script>
+
+function pokaz(id){
+
+let strony = document.querySelectorAll(".strona");
+
+strony.forEach(strona => {
+
+strona.classList.remove("aktywna");
+
+});
+
+document.getElementById(id).classList.add("aktywna");
+
+}
+
+</script>
+
+</body>
+
+</html>
